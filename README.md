@@ -81,8 +81,12 @@ WHERE stock < 10; <br>
 -- **Index** to speed up book lookups in orders
 CREATE INDEX idx_orders_bookid ON orders(book_id);<br>
 
+## 🖼️ Screenshots
+
+Screenshots of query outputs are available in the `/screenshots` folder.
 
 ---
+
 
 ## 🚀 How to Use
 
