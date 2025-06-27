@@ -32,7 +32,6 @@ Data was imported using SQL import wizard from CSV files.
 
 - **SQL** (MySQL workbench)
 - CSV datasets
-- SQL views, joins, and aggregate functions
 
 ---
 
