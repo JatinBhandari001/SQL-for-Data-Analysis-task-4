@@ -79,7 +79,7 @@ where orders.amount>30;
 select * from orders
 where order_date between "2023-11-01" and "2023-11-30";
 
-##Views 
+##Views Books that sold the most
 Create view TopBooksView AS
 select  
     b.book_id, b.title, b.genre,SUM(o.Quantity) AS UnitsSold,
@@ -90,13 +90,14 @@ GROUP BY b.book_id, b.title, b.genre
 ORDER BY UnitsSold DESC;
 Select * from TopBooksView;
 
+##Books with stock less than 10
 Create view Lowstockbookview AS
 Select book_id,title,stock
 From book
 where Stock < 10;
 Select * from Lowstockbookview;
 
-##index 
+##index to speed up book lookups in orders
 Create index idx_orders_bookid on orders(book_id);
 select * from orders where book_id = 102;
 
