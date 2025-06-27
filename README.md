@@ -35,17 +35,6 @@ Data was imported using SQL import wizard from CSV files.
 
 ---
 
-## 📄 Project Files
-
-| File Name             | Purpose                            |
-|------------------------|------------------------------------|
-| `create_tables.sql`    | Creates database schema            |
-| `views.sql`            | Contains reusable views            |
-| `indexes.sql`          | Indexes to optimize performance    |
-| `analysis_queries.sql` | Main SQL queries for insights      |
-
----
-
 ## 🧠 Sample Analysis Questions
 
 - Who are the top 5 customers by revenue?
